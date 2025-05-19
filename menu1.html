@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hridoy Picks</title>
+
+  <!-- Font & Icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="left-icons">
+      <i class="fas fa-bars icon-hamburger" onclick="toggleDrawer()"></i>
+    </div>
+
+    <a class="logo" href="#" id="logoBox">
+      <span>Hridoy</span>
+      <img alt="Logo" src="hp.png" style="height: 60px;" />
+      <span>Picks</span>
+    </a>
+
+    <div class="search-box" id="searchBox" style="display: none;">
+      <input id="searchInput" type="text" placeholder="Search here..." oninput="toggleClearIcon()" />
+      <span id="clearBtn" class="clear-icon" onclick="clearSearch()">×</span>
+    </div>
+
+    <div class="right-icons">
+      <i class="fas fa-search icon-search" onclick="toggleSearch()"></i>
+      <a class="icon-link" href="contact.html">
+        <i class="fas fa-user icon-user"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Drawer Menu -->
+  <div id="drawerMenu" style="position: fixed; top: 0; right: -270px; width: 270px; height: 100vh; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3); transition: right 0.3s ease; z-index: 2000; display: flex; flex-direction: column; padding: 35px 25px; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
+    <span onclick="toggleDrawer()" style="position: absolute; top: 15px; right: 20px; font-size: 26px; font-weight: bold; color: #ffffff; cursor: pointer;">&times;</span>
+    <h2 style="margin-bottom: 30px; font-size: 22px; font-weight: 700; color: #ffffff; letter-spacing: 1px;">Menu</h2>
+    <a href="index.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Home</a>
+    <a href="#" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">1. Here are 10 popular Home & Kitchen products.</a>
+  </div>
+  
+  
+  
+<!-- Products Section -->
+<section class="products-section">
+  <h2 class="section-title">Here are 10 popular Home & Kitchen products.</h2>
+  <div class="products-grid">
+
+    <div class="product-card" data-title="Instant Pot Duo – 7-in-1 Electric Cooker for Fast & Healthy Meals">       
+      <img src="product1.png" alt="Product 1">
+      <h3>Instant Pot Duo – 7-in-1 Electric Cooker for Fast & Healthy Meals</h3>
+      <a href="product1.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="Ninja AF101 – 4-in-1 Air Fryer for Quick & Oil-Free Cooking">
+      <img src="product2.png" alt="Product 2">
+      <h3>Ninja AF101 – 4-in-1 Air Fryer for Quick & Oil-Free Cooking</h3>
+      <a href="product2.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="Eureka J15 Robot Vacuum – Self-Emptying & Smart Mop with AI System">
+      <img src="product3.png" alt="Product 3">
+      <h3>Eureka J15 Robot Vacuum – Self-Emptying & Smart Mop with AI System</h3>
+      <a href="product3.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="30-Cup Water Filter Pitcher – Clean Water Solution with 5 Filters">
+      <img src="product4.png" alt="Product 4">
+      <h3>30-Cup Water Filter Pitcher – Clean Water Solution with 5 Filters</h3>
+      <a href="product4.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="Stand Mixer 6.5QT – 10-Speed Kitchen Mixer with Bowl & Attachments">
+      <img src="product5.png" alt="Product 5">
+      <h3>Stand Mixer 6.5QT – 10-Speed Kitchen Mixer with Bowl & Attachments</h3>
+      <a href="product5.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="T-fal 14-Piece Cookware Set – Durable Nonstick & Oven Safe Pots/Pans">
+      <img src="product6.png" alt="Product 6">
+      <h3>T-fal 14-Piece Cookware Set – Durable Nonstick & Oven Safe Pots/Pans</h3>
+      <a href="product6.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="Chefman Electric Kettle – 1.8L Glass Boiler with Auto Shut-Off Safety">
+      <img src="product7.png" alt="Product 7">
+      <h3>Chefman Electric Kettle – 1.8L Glass Boiler with Auto Shut-Off Safety</h3>
+      <a href="product7.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="TOSHIBA Microwave Oven – 8-in-1 Air Fryer & Broiler Combo Unit">
+      <img src="product8.png" alt="Product 8">
+      <h3>TOSHIBA Microwave Oven – 8-in-1 Air Fryer & Broiler Combo Unit</h3>
+      <a href="product8.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="Smart LED Bulbs (6-Pack) – Alexa/Google Enabled Color-Changing Lights">
+      <img src="product9.png" alt="Product 9">
+      <h3>Smart LED Bulbs (6-Pack) – Alexa/Google Enabled Color-Changing Lights</h3>
+      <a href="product9.html" class="review-button">Product Review</a>
+    </div>
+
+    <div class="product-card" data-title="2-Tier Dish Drying Rack – Countertop Organizer with Drainboard & Holder">
+      <img src="product10.png" alt="Product 10">
+      <h3>2-Tier Dish Drying Rack – Countertop Organizer with Drainboard & Holder</h3>
+      <a href="product10.html" class="review-button">Product Review</a>
+    </div>
+  </div>
+</section>
+  
+  
+  
+  
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+          <li><a href="submit-product.html">Submit Product</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="media-kit.html">Media Kit</a></li>
+          <li><a href="press-mentions.html">Press Mentions</a></li>
+          <li><a href="advertise.html">Advertise</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="send-feedback.html">Send Feedback</a></li>
+          <li><a href="mailto:freelancerbd838@gmail.com">Email Us</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16Ev8afzyM/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <p class="footer-bottom">© 2025 Hridoy Picks — All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a> |
+      <a href="cookie-policy.html">Cookie Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

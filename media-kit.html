@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Kit | Hridoy Picks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      background: #ffffff;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 36px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #007acc;
+    }
+
+    p, li {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      list-style-type: disc;
+    }
+
+    .highlight-box {
+      background: #e8f3ff;
+      border-left: 4px solid #007acc;
+      padding: 20px 25px;
+      margin-top: 40px;
+      border-radius: 6px;
+    }
+
+    .highlight-box a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .highlight-box a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p, li {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="left-icons">
+      <i class="fas fa-bars icon-hamburger" onclick="toggleDrawer()"></i>
+    </div>
+    <a class="logo" href="index.html" id="logoBox">
+      <span>Hridoy</span>
+      <img alt="Logo" src="hp.png" style="height: 60px;" />
+      <span>Picks</span>
+    </a>
+    <div class="right-icons">
+      <a class="icon-link" href="contact.html">
+        <i class="fas fa-user icon-user"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Drawer Menu -->
+  <div id="drawerMenu" style="position: fixed; top: 0; right: -270px; width: 270px; height: 100vh; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3); transition: right 0.3s ease; z-index: 2000; display: flex; flex-direction: column; padding: 35px 25px; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
+    <span onclick="toggleDrawer()" style="position: absolute; top: 15px; right: 20px; font-size: 26px; font-weight: bold; color: #ffffff; cursor: pointer;">&times;</span>
+    <h2 style="margin-bottom: 30px; font-size: 22px; font-weight: 700; color: #ffffff; letter-spacing: 1px;">Menu</h2>
+    <a href="index.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Home</a>
+    <a href="menu1.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">1. Here are 10 popular Home & Kitchen products.</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Media Kit</h1>
+    <p>Thank you for your interest in collaborating with <strong>Hridoy Picks</strong>. We are a new and passionate product review platform focused on smart shopping and honest recommendations.</p>
+
+    <h2>Who We Are</h2>
+    <p>Hridoy Picks is built to help online shoppers make confident decisions. Though we're just getting started, our goal is to grow into a trusted source for unbiased product reviews across categories like tech, home, and lifestyle.</p>
+
+    <h2>Target Audience</h2>
+    <ul>
+      <li><strong>Target Regions:</strong> United States, Canada, and other English-speaking countries</li>
+      <li><strong>Age Range:</strong> 25–45 years</li>
+      <li><strong>Interests:</strong> Tech gadgets, Home & Kitchen, Smart shopping</li>
+    </ul>
+
+    <h2>Collaboration Opportunities</h2>
+    <ul>
+      <li>Sponsored Product Reviews (honest & transparent)</li>
+      <li>Affiliate Product Listings</li>
+      <li>Newsletter Mentions (planned)</li>
+      <li>Social Media Mentions (growing presence)</li>
+    </ul>
+
+    <h2>Why Work With Us</h2>
+    <p>We aim to build long-term relationships with brands that value transparency. Our content is SEO-friendly, user-first, and designed to build trust with niche audiences.</p>
+
+    <div class="highlight-box">
+      Interested in collaborating?<br />
+      Contact us at <a href="mailto:freelancerbd838@gmail.com">freelancerbd838@gmail.com</a> or visit our <a href="contact.html">Contact Page</a>.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+          <li><a href="submit-product.html">Submit Product</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="media-kit.html">Media Kit</a></li>
+          <li><a href="press-mentions.html">Press Mentions</a></li>
+          <li><a href="advertise.html">Advertise</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="send-feedback.html">Send Feedback</a></li>
+          <li><a href="mailto:freelancerbd838@gmail.com">Email Us</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16Ev8afzyM/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <p class="footer-bottom">© 2025 Hridoy Picks — All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a> |
+      <a href="cookie-policy.html">Cookie Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
