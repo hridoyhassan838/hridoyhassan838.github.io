@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
   <!-- Charset & Responsive Viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,32 +14,40 @@
   <meta name="author" content="Hriday Hassan" />
 
   <!-- Social Media Preview (Open Graph & Twitter Card) -->
-<meta property="og:title" content="Amazon Product Reviews | Hridoy Picks" />
-<meta property="og:description" content="Explore the best Amazon product reviews with honest insights and expert recommendations." />
-<meta property="og:image" content="https://raw.githubusercontent.com/hridoyhassan838/hridoyhassan838.github.io/main/fb.png" />
-<meta property="og:url" content="https://hridoyhassan838.github.io/" />
-<meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="Amazon Product Reviews | Hridoy Picks" />
+  <meta property="og:description" content="Explore the best Amazon product reviews with honest insights and expert recommendations." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/hridoyhassan838/hridoyhassan838.github.io/main/ fb.webp" />
+  <meta property="og:url" content="https://hridoyhassan838.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Google Search Console -->
-<meta name="google-site-verification" content="9rQVHEiuyEszh9FEGtv9-RAb7_UZ7gfVNsJOiZkuMg0" />
+  <meta name="google-site-verification" content="9rQVHEiuyEszh9FEGtv9-RAb7_UZ7gfVNsJOiZkuMg0" />
 
-  <!-- Stylesheet & Script -->
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HXBPV3X1M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  gtag('config', 'G-8HXBPV3X1M');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HXBPV3X1M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-8HXBPV3X1M');
+  </script>
+
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
 </head>
 
 
@@ -58,7 +65,7 @@
   <!-- Website Logo -->
   <a href="#" class="logo" id="logoBox">
     <span>Hridoy</span>
-    <img src="hp.png" alt="Logo" style="height: 60px;" />
+    <img src="hp.webp" alt="Logo" style="height: 60px;" />
     <span>Picks</span>
   </a>
 
@@ -189,70 +196,70 @@
 
     <!-- Product Card 1 -->
 <div class="product-card" data-title="Instant Pot Duo – 7-in-1 Electric Cooker for Fast & Healthy Meals">
-  <img src="product1.png" alt="Amazon product reviews - Instant Pot Duo Electric Cooker" />
+  <img src="product1.webp" alt="Amazon product reviews - Instant Pot Duo Electric Cooker" loading="lazy"/>
   <h3>Instant Pot Duo – 7-in-1 Electric Cooker for Fast & Healthy Meals</h3>
   <a href="product1.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 2 -->
 <div class="product-card" data-title="Ninja AF101 – 4-in-1 Air Fryer for Quick & Oil-Free Cooking">
-  <img src="product2.png" alt="Amazon product reviews - Ninja AF101 Air Fryer" />
+  <img src="product2.webp" alt="Amazon product reviews - Ninja AF101 Air Fryer" loading="lazy" />
   <h3>Ninja AF101 – 4-in-1 Air Fryer for Quick & Oil-Free Cooking</h3>
   <a href="product2.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 3 -->
 <div class="product-card" data-title="Eureka J15 Robot Vacuum – Self-Emptying & Smart Mop with AI System">
-  <img src="product3.png" alt="Amazon product reviews - Eureka J15 Robot Vacuum Cleaner" />
+  <img src="product3.webp" alt="Amazon product reviews - Eureka J15 Robot Vacuum Cleaner" loading="lazy"/>
   <h3>Eureka J15 Robot Vacuum – Self-Emptying & Smart Mop with AI System</h3>
   <a href="product3.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 4 -->
 <div class="product-card" data-title="30-Cup Water Filter Pitcher – Clean Water Solution with 5 Filters">
-  <img src="product4.png" alt="Amazon product reviews - 30-Cup Water Filter Pitcher" />
+  <img src="product4.webp" alt="Amazon product reviews - 30-Cup Water Filter Pitcher" loading="lazy"/>
   <h3>30-Cup Water Filter Pitcher – Clean Water Solution with 5 Filters</h3>
   <a href="product4.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 5 -->
 <div class="product-card" data-title="Stand Mixer 6.5QT – 10-Speed Kitchen Mixer with Bowl & Attachments">
-  <img src="product5.png" alt="Amazon product reviews - Stand Mixer 6.5QT with Attachments" />
+  <img src="product5.webp" alt="Amazon product reviews - Stand Mixer 6.5QT with Attachments" loading="lazy"/>
   <h3>Stand Mixer 6.5QT – 10-Speed Kitchen Mixer with Bowl & Attachments</h3>
   <a href="product5.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 6 -->
 <div class="product-card" data-title="T-fal 14-Piece Cookware Set – Durable Nonstick & Oven Safe Pots/Pans">
-  <img src="product6.png" alt="Amazon product reviews - T-fal 14-Piece Nonstick Cookware Set" />
+  <img src="product6.webp" alt="Amazon product reviews - T-fal 14-Piece Nonstick Cookware Set" loading="lazy"/>
   <h3>T-fal 14-Piece Cookware Set – Durable Nonstick & Oven Safe Pots/Pans</h3>
   <a href="product6.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 7 -->
 <div class="product-card" data-title="Chefman Electric Kettle – 1.8L Glass Boiler with Auto Shut-Off Safety">
-  <img src="product7.png" alt="Amazon product reviews - Chefman Electric Glass Kettle" />
+  <img src="product7.webp" alt="Amazon product reviews - Chefman Electric Glass Kettle" loading="lazy"/>
   <h3>Chefman Electric Kettle – 1.8L Glass Boiler with Auto Shut-Off Safety</h3>
   <a href="product7.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 8 -->
 <div class="product-card" data-title="TOSHIBA Microwave Oven – 8-in-1 Air Fryer & Broiler Combo Unit">
-  <img src="product8.png" alt="Amazon product reviews - TOSHIBA Microwave Air Fryer Combo" />
+  <img src="product8.webp" alt="Amazon product reviews - TOSHIBA Microwave Air Fryer Combo" loading="lazy"/>
   <h3>TOSHIBA Microwave Oven – 8-in-1 Air Fryer & Broiler Combo Unit</h3>
   <a href="product8.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 9 -->
 <div class="product-card" data-title="Smart LED Bulbs (6-Pack) – Alexa/Google Enabled Color-Changing Lights">
-  <img src="product9.png" alt="Amazon product reviews - Smart LED Bulbs Color-Changing 6-Pack" />
+  <img src="product9.webp" alt="Amazon product reviews - Smart LED Bulbs Color-Changing 6-Pack" loading="lazy"/>
   <h3>Smart LED Bulbs (6-Pack) – Alexa/Google Enabled Color-Changing Lights</h3>
   <a href="product9.html" class="review-button">Product Review</a>
 </div>
 
 <!-- Product Card 10 -->
 <div class="product-card" data-title="2-Tier Dish Drying Rack – Countertop Organizer with Drainboard & Holder">
-  <img src="product10.png" alt="Amazon product reviews - 2-Tier Dish Drying Rack Organizer" />
+  <img src="product10.webp" alt="Amazon product reviews - 2-Tier Dish Drying Rack Organizer" loading="lazy"/>
   <h3>2-Tier Dish Drying Rack – Countertop Organizer with Drainboard & Holder</h3>
   <a href="product10.html" class="review-button">Product Review</a>
 </div>
