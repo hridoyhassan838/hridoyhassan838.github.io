@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hridoy Picks</title>
+
+  <!-- Font & Icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="left-icons">
+      <i class="fas fa-bars icon-hamburger" onclick="toggleDrawer()"></i>
+    </div>
+
+    <a class="logo" href="#" id="logoBox">
+      <span>Hridoy</span>
+      <img alt="Logo" src="hp.webp" style="height: 60px;" />
+      <span>Picks</span>
+    </a>
+
+    <div class="search-box" id="searchBox" style="display: none;">
+      <input id="searchInput" type="text" placeholder="Search here..." oninput="toggleClearIcon()" />
+      <span id="clearBtn" class="clear-icon" onclick="clearSearch()">×</span>
+    </div>
+
+    <div class="right-icons">
+      <i class="fas fa-search icon-search" onclick="toggleSearch()"></i>
+      <a class="icon-link" href="contact.html">
+        <i class="fas fa-user icon-user"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Drawer Menu -->
+  <div id="drawerMenu" style="position: fixed; top: 0; right: -270px; width: 270px; height: 100vh; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3); transition: right 0.3s ease; z-index: 2000; display: flex; flex-direction: column; padding: 35px 25px; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
+    <span onclick="toggleDrawer()" style="position: absolute; top: 15px; right: 20px; font-size: 26px; font-weight: bold; color: #ffffff; cursor: pointer;">&times;</span>
+    <h2 style="margin-bottom: 30px; font-size: 22px; font-weight: 700; color: #ffffff; letter-spacing: 1px;">Menu</h2>
+    <a href="index.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Home</a>
+    <a href="menu1.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">1. Here are 10 popular Home & Kitchen products.</a>
+  </div>
+  
+  
+  
+  
+            <!-- product section -->
+<section class="product-review-section">
+  <div class="product-review-container">
+    <h2>Chefman Electric Kettle 1.8L – 1500W Glass Hot Water Boiler with Auto Shut Off & Easy Clean Lid.</h2>
+
+    <img src="product7.webp" alt="Chefman Electric Kettle Image" class="review-image" />
+
+    <p class="review-intro">
+      The Chefman 1.8L Electric Kettle is a fast, safe, and stylish solution for boiling water. With a powerful 1500W heating element, it’s perfect for tea, coffee, and instant meals.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul class="review-features">
+      <li>1.8-liter borosilicate glass kettle with LED indicator</li>
+      <li>1500W power for quick boiling</li>
+      <li>Auto shut-off and boil-dry protection</li>
+      <li>Removable lid for easy cleaning</li>
+      <li>BPA-free materials and stainless steel filter</li>
+    </ul>
+
+    <h3>Advantages</h3>
+    <ul class="review-advantages">
+      <li>Boils water quickly and efficiently</li>
+      <li>Safe design with auto shut-off and boil-dry protection</li>
+      <li>Stylish glass body with blue LED illumination</li>
+      <li>Easy to fill, clean, and pour</li>
+    </ul>
+
+    <h3>Disadvantages</h3>
+    <ul class="review-disadvantages">
+      <li>Power cord is not retractable</li>
+      <li>Glass body can get hot to the touch</li>
+    </ul>
+
+    <div class="review-link">
+      <a href="https://amzn.to/4dqDYku" target="_blank" class="buy-now">Buy Now on Amazon</a>
+    </div>
+  </div>
+</section>
+  
+  
+  
+  
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="work-with-me.html">Work With Me</a></li>
+          <li><a href="submit-product.html">Submit Product</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="media-kit.html">Media Kit</a></li>
+          <li><a href="press-mentions.html">Press Mentions</a></li>
+          <li><a href="advertise.html">Advertise</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="send-feedback.html">Send Feedback</a></li>
+          <li><a href="mailto:freelancerbd838@gmail.com">Email Us</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16Ev8afzyM/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <p class="footer-bottom">© 2025 Hridoy Picks — All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-use.html">Terms of Use</a> |
+      <a href="cookie-policy.html">Cookie Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
