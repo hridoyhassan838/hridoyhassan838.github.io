@@ -40,7 +40,7 @@ The purpose is to:
 
 ## 👤 Author
 
-**Hridoy Hassan**  
+**Md.Hridoy-Web Developer**  
 📧 Email: [freelancerbd838@gmail.com](mailto:freelancerbd838@gmail.com)  
 🌐 GitHub: [@hridoyhassan838](https://github.com/hridoyhassan838)
 
