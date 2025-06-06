@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Advertise With Us | Hridoy Picks</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
   <style>
@@ -123,25 +124,13 @@
     </div>
   </div>
 
-  
-<!-- Footer Section Load -->
+
+
+  <!-- Footer Section Load -->
 <div id="footer-container"></div>
 
-  <script>
-    function toggleDrawer() {
-      const drawer = document.getElementById("drawerMenu");
-      if (drawer) {
-        drawer.style.right = drawer.style.right === "0px" ? "-270px" : "0px";
-      }
-    }
 
 
-// Load footer.html content dynamically
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    });
-  </script>
+  <!-- Footer End -->
 </body>
 </html>
