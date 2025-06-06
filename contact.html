@@ -115,12 +115,8 @@
     </form>
   </div>
 
-
-
   <!-- Footer will be loaded here -->
 <div id="footer-container"></div>
-
-
 
   <script>
     function toggleDrawer() {
@@ -129,10 +125,8 @@
         drawer.style.right = drawer.style.right === "0px" ? "-270px" : "0px";
       }
     }
-
-
-
-// Load footer.html content dynamically
+    
+    // Load footer.html content dynamically
   fetch('footer.html')
     .then(response => response.text())
     .then(data => {
