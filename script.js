@@ -107,3 +107,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (searchIcon) searchIcon.style.display = "none";
   }
 });
+
+
+
+
+// Load footer.html content dynamically
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
