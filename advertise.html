@@ -4,133 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Advertise With Us | Hridoy Picks</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <!-- Stylesheet & Script -->
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f9fb;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f8fc;
       margin: 0;
       padding: 0;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-    h2 {
-      font-size: 24px;
-      margin-top: 35px;
-    }
-    p, li {
-      font-size: 16px;
+      color: #2c3e50;
       line-height: 1.6;
     }
+
+    .container {
+      width: 100%;
+      padding: 30px;
+      background: #fff;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #1a202c;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #0077cc;
+    }
+
+    p, li {
+      font-size: 16px;
+    }
+
     ul {
-      padding-left: 20px;
+      margin-top: 10px;
+      padding-left: 25px;
     }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
     .highlight-box {
-      background: #eaf4ff;
-      border-left: 4px solid #0077cc;
-      padding: 15px 20px;
-      margin-top: 30px;
+      background: #e6f0ff;
+      border-left: 5px solid #0077cc;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
     }
+
     .highlight-box a {
       color: #0077cc;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: 600;
+    }
+
+    .highlight-box a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #005fa3;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===========================
-     Website Header Section
-     =========================== -->
-  <header>
-      <!-- Left-side Hamburger Icon -->
-    <div class="left-icons">
-      <i class="fas fa-bars icon-hamburger" onclick="toggleDrawer()"></i>
-    </div>
-    
-   <!-- Website Logo -->
-    <a class="logo" href="index.html" id="logoBox">
-      <span>Hridoy</span>
-      <img alt="Logo" src="hp.webp" style="height: 60px;" />
-      <span>Picks</span>
-    </a>
-    
-    <!-- Right-side Icons (Search & User) -->
-    <div class="right-icons">
-    <a class="icon-link" href="contact.html">
-      <i class="fas fa-user icon-user"></i>
-      </a>
-    </div>
-  </header>
-  
-  
-
-<!-- ===========================
-     Sidebar Drawer Menu
-     =========================== -->
-  <div id="drawerMenu" style="position: fixed; top: 0; right: -270px; width: 270px; height: 100vh; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3); transition: right 0.3s ease; z-index: 2000; display: flex; flex-direction: column; padding: 35px 25px; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
-      
-<!-- Close Icon (×) -->
-    <span onclick="toggleDrawer()" style="position: absolute; top: 15px; right: 20px; font-size: 26px; font-weight: bold; color: #ffffff; cursor: pointer;">&times;</span>
-    
-
-    <h2 style="margin-bottom: 30px; font-size: 22px; font-weight: 700; color: #ffffff;">Menu</h2>
-    <a href="index.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Home</a>
-    <a href="menu1.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">1. Here are 10 popular Home & Kitchen products.</a>
-    <!-- <a href="contact.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Contact</a> -->
-  </div>
-
-  <!-- Main Content -->
   <div class="container">
     <h1>Advertise With Us</h1>
-    <p><strong>Hridoy Picks</strong> is a growing product review platform focused on smart shopping and honest recommendations. If you are interested in advertising on our site, here’s how we can collaborate:</p>
+    <p><strong>Hridoy Picks</strong> is a growing product review platform focused on smart shopping and honest recommendations. If you're looking to promote your product or service to a highly engaged audience, you're in the right place.</p>
 
     <h2>Why Advertise With Us?</h2>
     <ul>
-      <li>Targeted audience from the US, Canada, and other English-speaking countries</li>
-      <li>SEO-optimized and user-focused content</li>
-      <li>Trusted and natural presentation of affiliate links</li>
-      <li>Opportunities for long-term partnerships</li>
+      <li>Audience from the US, Canada, UK, and other English-speaking countries</li>
+      <li>High-quality, SEO-optimized, user-centered content</li>
+      <li>Affiliate-friendly and transparent promotion style</li>
+      <li>Long-term collaboration opportunities</li>
     </ul>
 
     <h2>Advertising Options</h2>
     <ul>
-      <li>Sponsored product reviews</li>
-      <li>Banner advertisements</li>
-      <li>Newsletter mentions (coming soon)</li>
-      <li>Social media promotions (growing presence)</li>
+      <li>📦 Sponsored product reviews</li>
+      <li>📢 Banner advertisements (header, sidebar, in-content)</li>
+      <li>📬 Newsletter features (coming soon)</li>
+      <li>📱 Social media campaigns (Instagram, Pinterest, Facebook)</li>
     </ul>
 
-    <h2>Contact Us</h2>
+    <h2>Let's Collaborate</h2>
     <div class="highlight-box">
-      Interested in working together?<br>
-      Email us at <a href="mailto:freelancerbd838@gmail.com">freelancerbd838@gmail.com</a><br>
-      or visit our <a href="contact.html">Contact Page</a>
+      Interested in working with us?<br><br>
+      📧 Email us: <a href="mailto:freelancerbd838@gmail.com">freelancerbd838@gmail.com</a><br>
+      🌐 Or visit our <a href="contact.html">Contact Page</a>
     </div>
+
+    <a href="contact.html" class="cta-button">Contact Us Now</a>
   </div>
-
-
-
-  <!-- Footer Section Load -->
-<div id="footer-container"></div>
-
-
-
-  <!-- Footer End -->
+  
+  
 </body>
 </html>

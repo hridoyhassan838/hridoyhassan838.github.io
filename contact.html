@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="noindex, nofollow">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow" />
   <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css" />  
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <!-- Stylesheet & Script -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
   <style>
-    
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
 
-    .contact-man {
-      max-width: 700px;
-      margin: 60px auto;
-      background: white;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .contact-section {
+      width: 100%;
+      margin: 0;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 0;
+      box-shadow: none;
     }
 
-     h2 {
+    .contact-section h2 {
+      text-align: center;
       margin-bottom: 20px;
-      text-align: center; 
+      font-size: 26px;
+      color: #1a202c;
     }
 
-     label {
+    label {
       display: block;
       margin-top: 15px;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
+      font-weight: 600;
     }
 
-     input, textarea {
+    input, textarea {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 1em;
+      background-color: #f9fafb;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #3182ce;
+      outline: none;
+      background-color: #fff;
     }
 
     button {
+      width: 100%;
       margin-top: 20px;
       padding: 12px;
       background: linear-gradient(to right, #4facfe, #00f2fe);
       border: none;
-      color: white;
-      font-size: 1em;
       border-radius: 6px;
+      font-size: 1em;
+      color: white;
+      font-weight: bold;
       cursor: pointer;
-      width: 100%;
+      transition: background 0.3s;
     }
 
-     button:hover {
+    button:hover {
       background: linear-gradient(to right, #00f2fe, #4facfe);
     }
 
     @media (max-width: 600px) {
-      .contact-man {
-        margin: 20px;
+      .contact-section {
         padding: 20px;
+      }
+
+      .contact-section h2 {
+        font-size: 22px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Start -->
-  <header>
-    <div class="left-icons">
-      <i class="fas fa-bars icon-hamburger" onclick="toggleDrawer()"></i>
-    </div>
-    <a class="logo" href="index.html" id="logoBox">
-      <span>Hridoy</span>
-      <img alt="Logo" src="hp.webp" style="height: 60px;" />
-      <span>Picks</span>
-    </a>
-    <div class="right-icons">
-      <a class="icon-link" href="contact.html">
-        <i class="fas fa-user icon-user"></i>
-      </a>
-    </div>
-  </header>
-  <!-- Header End -->
-
-  <!-- Drawer Menu -->
-  <div id="drawerMenu" style="position: fixed; top: 0; right: -270px; width: 270px; height: 100vh; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3); transition: right 0.3s ease; z-index: 2000; display: flex; flex-direction: column; padding: 35px 25px; border-top-left-radius: 12px; border-bottom-left-radius: 12px;">
-    <span onclick="toggleDrawer()" style="position: absolute; top: 15px; right: 20px; font-size: 26px; font-weight: bold; color: #ffffff; cursor: pointer;">&times;</span>
-    <h2 style="margin-bottom: 30px; font-size: 22px; font-weight: 700; color: #ffffff;">Menu</h2>
-    <a href="index.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Home</a>
-    <a href="menu1.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">1. Here are 10 popular Home & Kitchen products.</a>
-    <!-- <a href="contact.html" style="margin-bottom: 18px; font-size: 16px; color: #ffffff;">Contact</a> -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="contact-man">
+  <div class="contact-section">
     <h2>We'd love to hear from you</h2>
     <form action="https://formspree.io/f/xgvkagnw" method="POST">
       <label for="name">Your Name</label>
@@ -108,25 +109,6 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
-
-  <!-- Footer will be loaded here -->
-<div id="footer-container"></div>
-
-  <script>
-    function toggleDrawer() {
-      const drawer = document.getElementById("drawerMenu");
-      if (drawer) {
-        drawer.style.right = drawer.style.right === "0px" ? "-270px" : "0px";
-      }
-    }
-    
-    // Load footer.html content dynamically
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    });
-  </script>
 
 </body>
 </html>
