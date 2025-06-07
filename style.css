@@ -3,6 +3,127 @@ box-sizing: border-box;
 margin: 0; 
 padding: 0; 
 }
+
+
+
+
+header {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-icons, .right-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-search, .icon-hamburger, .icon-user {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.search-box {
+  position: relative;
+  display: none;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+  display: none;
+}
+
+#drawerMenu {
+  position: fixed;
+  top: 0;
+  right: -270px;
+  width: 270px;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+#drawerMenu span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#drawerMenu h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#drawerMenu a {
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#drawerMenu a:hover {
+  color: #00eaff;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+
+
+
 /* Section(1) start */
 .hero {
 background: linear-gradient(135deg, #203a43, #2c5364); 
