@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Include head -->
-  <!--#include virtual="../src/partials/head.html" -->
-</head>
+<head id="head-include"></head>
 <body>
 
-  <!-- Include Header -->
-  <!--#include virtual="../src/components/Header.html" -->
+  <!-- বাকী content -->
 
-  <!-- Include HomePage Content -->
-  <!--#include virtual="../src/pages/HomePage.html" -->
-
-  <!-- Include Footer -->
-  <!--#include virtual="../src/components/Footer.html" -->
-
+  <script>
+    fetch("../src/components/layout/head.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("head-include").innerHTML = data;
+      });
+  </script>
 </body>
 </html>
